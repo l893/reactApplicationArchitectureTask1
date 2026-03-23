@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "paths": {
+      "@app": ["src/app/index.js"],
+      "@app/*": ["src/app/*"],
+      "@pages": ["src/pages/index.js"],
+      "@pages/*": ["src/pages/*"],
+      "@features": ["src/features/index.js"],
+      "@features/*": ["src/features/*"],
+      "@widgets": ["src/widgets/index.js"],
+      "@widgets/*": ["src/widgets/*"],
+      "@entities": ["src/entities/index.js"],
+      "@entities/*": ["src/entities/*"],
+      "@shared": ["src/shared/index.js"],
+      "@shared/*": ["src/shared/*"],
+      "@components": ["src/components/index.js"],
+      "@components/*": ["src/components/*"]
+    }
+  },
+  "include": ["src"]
+}
