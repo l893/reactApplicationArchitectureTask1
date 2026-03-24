@@ -79,10 +79,9 @@
 - `src/shared/` — переиспользуемые примитивы:
   - `shared/api` — http-client (`fetchJson`, `ApiError`, `isAbortError`)
   - `shared/lib` — `lazyImport`, `LazyBoundary`
-  - `shared/ui` — UI-состояния и fallbacks (loading/error/empty)
+  - `shared/ui` — UI-примитивы и состояния: `LoadingState/ErrorState/EmptyState` + `SortControls` + **кастомный Input**
   - `shared/theme` — тема MUI
   - `shared/config` — общие ключи/конфиги
-  - `shared/ui` — UI-примитивы и состояния: `LoadingState/ErrorState/EmptyState` + `SortControls` + **кастомный Input**
 
 ### Алиасы импортов
 
