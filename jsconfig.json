@@ -16,9 +16,7 @@
       "@entities": ["src/entities/index.js"],
       "@entities/*": ["src/entities/*"],
       "@shared": ["src/shared/index.js"],
-      "@shared/*": ["src/shared/*"],
-      "@components": ["src/components/index.js"],
-      "@components/*": ["src/components/*"]
+      "@shared/*": ["src/shared/*"]
     }
   },
   "include": ["src"]

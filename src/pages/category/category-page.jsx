@@ -14,9 +14,8 @@ import {
   Stack,
   Typography,
 } from '@mui/material';
-import { SortControls } from '@components';
 import { ALLOWED_CATEGORIES } from '@entities/rick-morty';
-import { EmptyState, ErrorState, LoadingState } from '@shared/ui';
+import { EmptyState, ErrorState, LoadingState, SortControls } from '@shared/ui';
 import { useInfiniteScroll } from '@features/infinite-scroll';
 import { useCategoryPagination } from '@features/category-pagination';
 

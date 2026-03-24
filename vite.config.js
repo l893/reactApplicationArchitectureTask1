@@ -13,9 +13,6 @@ export default defineConfig({
       '@widgets': fileURLToPath(new URL('./src/widgets', import.meta.url)),
       '@entities': fileURLToPath(new URL('./src/entities', import.meta.url)),
       '@shared': fileURLToPath(new URL('./src/shared', import.meta.url)),
-      '@components': fileURLToPath(
-        new URL('./src/components', import.meta.url),
-      ),
     },
   },
 });

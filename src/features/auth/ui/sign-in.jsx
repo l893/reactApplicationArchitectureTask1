@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button } from '@mui/material';
-import { Input } from './input';
+import { Input } from '@shared/ui';
 
 export const Signin = ({ onSubmit }) => {
   const [form, setForm] = useState({ email: '', password: '' });

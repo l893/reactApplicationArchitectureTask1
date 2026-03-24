@@ -1,7 +1,6 @@
 import { useMemo } from 'react';
 import { Navigate, useLocation, useNavigate } from 'react-router-dom';
-import { useAuthActions, useAuthState } from '@features/auth';
-import { Signin, Wrapper } from '@components/auth';
+import { Signin, Wrapper, useAuthActions, useAuthState } from '@features/auth';
 
 export const Login = () => {
   const navigate = useNavigate();

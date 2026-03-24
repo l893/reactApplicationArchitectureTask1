@@ -17,7 +17,7 @@
 
 ## Возможности
 
-- ✅ Страница **Login** (`/login`) на базе компонентов формы (`Signin`, `Input`, `Wrapper`)
+- ✅ Страница **Login** (`/login`) использует UI фичи `auth` (`Signin`, `Wrapper`) и кастомный `Input` из `shared/ui`
 - 🔐 Приватные маршруты:
   - `/:category`
   - `/:category/:id`
@@ -70,7 +70,7 @@
 - `src/pages/` — страницы (route-level composition): `home / category / detail / login / not-found`
 - `src/widgets/` — крупные блоки интерфейса (например, `navbar`)
 - `src/features/` — фичи:
-  - `auth/` — контекст, провайдер, guard, storage
+  - `auth/` — контекст, провайдер, guard, storage, **ui** (`Signin`, `Wrapper`)
   - `infinite-scroll/` — хук `useInfiniteScroll`
   - `category-pagination/` — хук `useCategoryPagination` (загрузка страниц категории, paging state, abort, ошибки)
 - `src/entities/` — доменная сущность Rick & Morty:
@@ -82,12 +82,12 @@
   - `shared/ui` — UI-состояния и fallbacks (loading/error/empty)
   - `shared/theme` — тема MUI
   - `shared/config` — общие ключи/конфиги
-- `src/components/` — небольшие общие компоненты и auth-ui (включая **кастомный Input**)
+  - `shared/ui` — UI-примитивы и состояния: `LoadingState/ErrorState/EmptyState` + `SortControls` + **кастомный Input**
 
 ### Алиасы импортов
 
 Используются алиасы из `jsconfig.json`:
-`@app`, `@pages`, `@features`, `@widgets`, `@entities`, `@shared`, `@components`.
+`@app`, `@pages`, `@features`, `@widgets`, `@entities`, `@shared`.
 
 ## Manual check (quick QA)
 
